@@ -1,4 +1,4 @@
-@import './core.scss';
+@import "./core.scss";
 
 html,
 body {
@@ -15,8 +15,9 @@ body {
   padding: 0;
   min-height: 100vh;
   min-width: 100vw;
-  font-family: 'Roboto-Regular', 'Helvetica Neue', Helvetica, 'Zawgyi-One', Arial, sans-serif;
-  background-color: $app-bg-body;
+  font-family: "Roboto-Regular", "Helvetica Neue", Helvetica, "Zawgyi-One",
+    Arial, sans-serif;
+  background-color: $app-bg1;
 }
 
 a {
@@ -32,7 +33,7 @@ a {
 }
 
 strong {
-  font-family: 'Roboto-Bold', 'Zawgyi-One';
+  font-family: "Roboto-Bold", "Zawgyi-One";
 }
 
 /** Typography **/
@@ -45,168 +46,175 @@ p {
 
 h1 {
   font-size: 2.5rem;
-  font-family: 'Roboto-Bold', 'Zawgyi-One';
-  color: $app-color-h1;
+  font-family: "Roboto-Bold", "Zawgyi-One";
+  color: $app-text-primary;
 }
 
 h2 {
   font-size: 2rem;
-  font-family: 'Roboto-Bold', 'Zawgyi-One';
-  color: $app-color-h2;
+  font-family: "Roboto-Bold", "Zawgyi-One";
+  color: $app-text-primary;
 }
 
 h3 {
   font-size: 1.5rem;
-  font-family: 'Roboto-Medium', 'Zawgyi-One';
-  color: $app-color-h3;
+  font-family: "Roboto-Medium", "Zawgyi-One";
+  color: $app-text-primary;
 }
 
 h4 {
   font-size: 1.25rem;
-  font-family: 'Roboto-Medium', 'Zawgyi-One';
-  color: $app-color-h4;
+  font-family: "Roboto-Medium", "Zawgyi-One";
+  color: $app-text-primary;
 }
 
 input,
 button {
   font-family: inherit;
+  border: none;
+  outline: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 /** Buttons **/
 
-button {
-  border: 1px solid $app-color-border;
-  border-radius: 4px;
-  padding: 4px 8px;
-  font-family: 'Roboto-Regular', 'Zawgyi-One';
+// button {
+//   border: 1px solid $app-color-border;
+//   border-radius: 4px;
+//   padding: 4px 8px;
+//   font-family: 'Roboto-Regular', 'Zawgyi-One';
 
-  &.brand-btn {
-    background: $brand-color-primary;
-    color: $app-text-white;
-    text-transform: uppercase;
-    border-radius: 2rem;
-    padding: 0.5rem 1.75rem;
-    font-size: 0.9rem;
-    letter-spacing: 0.5px;
-    font-family: 'Roboto-Medium', 'Zawgyi-One';
-    border: 1px solid $brand-color-primary;
-    transition: all 0.5s ease;
+//   &.brand-btn {
+//     background: $brand-color-primary;
+//     color: $app-text-white;
+//     text-transform: uppercase;
+//     border-radius: 2rem;
+//     padding: 0.5rem 1.75rem;
+//     font-size: 0.9rem;
+//     letter-spacing: 0.5px;
+//     font-family: 'Roboto-Medium', 'Zawgyi-One';
+//     border: 1px solid $brand-color-primary;
+//     transition: all 0.5s ease;
 
-    &:hover,
-    &:focus {
-      background: darken($brand-color-primary, 5%);
-      border-color: darken($brand-color-primary, 5%);
-    }
+//     &:hover,
+//     &:focus {
+//       background: darken($brand-color-primary, 5%);
+//       border-color: darken($brand-color-primary, 5%);
+//     }
 
-    &.inverted {
-      background: #fff;
-      color: $brand-color-primary;
-      border-color: $brand-color-primary;
+//     &.inverted {
+//       background: #fff;
+//       color: $brand-color-primary;
+//       border-color: $brand-color-primary;
 
-      &[disabled] {
-        color: $app-color-disabled;
+//       &[disabled] {
+//         color: $app-color-disabled;
 
-        &:hover,
-        &:focus {
-          // color: $app-color-disabled;
-          background: $app-color-disabled-hover;
-          border-color: $app-color-disabled-hover;
-        }
-      }
+//         &:hover,
+//         &:focus {
+//           // color: $app-color-disabled;
+//           background: $app-color-disabled-hover;
+//           border-color: $app-color-disabled-hover;
+//         }
+//       }
 
-      &:hover,
-      &:focus {
-        // color: darken($brand-color-primary, 15%);
-      }
-    }
+//       &:hover,
+//       &:focus {
+//         // color: darken($brand-color-primary, 15%);
+//       }
+//     }
 
-    &:focus {
-      outline: none;
-    }
-  }
+//     &:focus {
+//       outline: none;
+//     }
+//   }
 
-  &[disabled] {
-    background: $app-color-disabled;
-    border-color: $app-color-disabled;
-    color: rgba($app-text-white, 0.5);
+//   &[disabled] {
+//     background: $app-color-disabled;
+//     border-color: $app-color-disabled;
+//     color: rgba($app-text-white, 0.5);
 
-    &:hover,
-    &:focus {
-      background: $app-color-disabled;
-      border-color: $app-color-disabled;
-    }
-  }
-}
+//     &:hover,
+//     &:focus {
+//       background: $app-color-disabled;
+//       border-color: $app-color-disabled;
+//     }
+//   }
+// }
 
-/** Form Elements **/
+// /** Form Elements **/
 
-input[type="text"],
-input[type="tel"],
-input[type="number"] {
-  border-radius: 4px;
-  outline: 0;
-  border: 0;
-  border-bottom: 1px solid $app-color-border;
-  /* width:500px; */
+// input[type="text"],
+// input[type="tel"],
+// input[type="number"] {
+//   border-radius: 4px;
+//   outline: 0;
+//   border: 0;
+//   border-bottom: 1px solid $app-color-border;
+//   /* width:500px; */
 
-  &.brand-input {
-    border: 0;
-    border-radius: 0;
-    border-bottom: 1px solid $app-color-border;
-    /* margin-bottom: 1rem; */
-    color: $app-text-primary;
-    padding: 0.5rem 0;
-    font-size: 1.2rem;
-  }
+//   &.brand-input {
+//     border: 0;
+//     border-radius: 0;
+//     border-bottom: 1px solid $app-color-border;
+//     /* margin-bottom: 1rem; */
+//     color: $app-text-primary;
+//     padding: 0.5rem 0;
+//     font-size: 1.2rem;
+//   }
 
-  &:focus {
-    outline: none;
-  }
-}
+//   &:focus {
+//     outline: none;
+//   }
+// }
 
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  margin: 0;
-}
+// input[type=number]::-webkit-inner-spin-button,
+// input[type=number]::-webkit-outer-spin-button {
+//   -webkit-appearance: none;
+//   -moz-appearance: none;
+//   appearance: none;
+//   margin: 0;
+// }
 
-.error {
-  color: $brand-color-primary;
-}
+// .error {
+//   color: $brand-color-primary;
+// }
 
-label.brand-label {
-  color: $app-text-secondary;
-  font-family: 'Roboto-Medium', 'Zawgyi-One';
+// label.brand-label {
+//   color: $app-text-secondary;
+//   font-family: 'Roboto-Medium', 'Zawgyi-One';
 
-  span {
-    margin-right: 0.5rem;
-  }
-}
+//   span {
+//     margin-right: 0.5rem;
+//   }
+// }
 
-textarea {
-  border-radius: 4px;
-  border: 1px solid $app-color-border;
+// textarea {
+//   border-radius: 4px;
+//   border: 1px solid $app-color-border;
 
-  &.brand-textarea {
-    padding: 0.25rem 0.5rem;
-    border: 2px solid $brand-color-primary;
-    color: $brand-color-primary;
+//   &.brand-textarea {
+//     padding: 0.25rem 0.5rem;
+//     border: 2px solid $brand-color-primary;
+//     color: $brand-color-primary;
 
-    &:focus {
-      outline: none;
-    }
-  }
-}
+//     &:focus {
+//       outline: none;
+//     }
+//   }
+// }
 
 /** Commonly-used styles **/
 
 a,
 button,
-input[type='button'],
-input[type='submit'],
-input[type='reset'],
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
 [role] {
   cursor: pointer;
 }

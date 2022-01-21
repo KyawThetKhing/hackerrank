@@ -1,0 +1,47 @@
+@import "assets/styles/core";
+
+.menu {
+  width: 100%;
+  height: calc(100vh - 70px);
+  background-color: $app-text-white;
+  position: fixed;
+  top: 70px;
+  left: -100%;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 1s ease;
+
+  &.active {
+    left: 0;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    font-weight: 300;
+    color: $app-text-black;
+    width: 90%;
+    padding-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid $app-color-border;
+
+    li {
+      margin-bottom: 25px;
+
+      a {
+        font-size: inherit;
+        color: inherit;
+        text-decoration: none;
+      }
+
+      &:hover {
+        font-weight: 500;
+      }
+    }
+  }
+}

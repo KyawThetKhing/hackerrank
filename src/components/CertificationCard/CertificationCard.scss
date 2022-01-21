@@ -1,0 +1,38 @@
+@import "assets/styles/core";
+
+.certificationCard {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 30px;
+  min-height: 183px;
+  background: #fff;
+  justify-content: space-between;
+  align-items: flex-start;
+  cursor: pointer;
+  box-shadow: 8px 8px 5px 0px rgba(0, 0, 0, 0.32);
+  -webkit-box-shadow: 8px 8px 5px 0px rgba(0, 0, 0, 0.32);
+  -moz-box-shadow: 8px 8px 5px 0px rgba(0, 0, 0, 0.32);
+
+  .certificationCard__title {
+    font-size: 28px;
+    font-weight: 600;
+    font-family: "Roboto-Bold";
+  }
+
+  .certificationCard__btn {
+    border: none;
+    padding: 10px 20px;
+    border: 1px solid $app-text-green;
+    color: $app-text-green;
+    cursor: pointer;
+    transition: all 1s ease;
+
+    &:hover {
+      background-color: $app-text-white;
+    }
+  }
+}

@@ -4,8 +4,10 @@ import { Provider } from "react-redux";
 
 //local imports
 import HorizontalLayout from "layouts/HorizontalLayout";
-import FirstPage from "pages/FirstPage";
-import SecondPage from "pages/SecondPage";
+import Dashboard from "pages/Dashboard";
+import Certifications from "pages/Certifications";
+import Compete from "pages/Compete";
+import LeaderBoard from "pages/LeaderBoard";
 import store from "redux/store";
 import PrivateRoute from "routes/PrivateRoute";
 //css
@@ -15,12 +17,31 @@ const App = () => {
   return (
     <Routes>
       <Route path="/" element={<HorizontalLayout />}>
-        <Route index element={<FirstPage />} />
+        <Route path="dashboard" index element={
+          <PrivateRoute>
+            <Dashboard />
+          </PrivateRoute>} />
         <Route
-          path="second"
+          path="certifications"
           element={
             <PrivateRoute>
-              <SecondPage />
+              <Certifications />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="compete"
+          element={
+            <PrivateRoute>
+              <Compete />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="leader-board"
+          element={
+            <PrivateRoute>
+              <LeaderBoard />
             </PrivateRoute>
           }
         />

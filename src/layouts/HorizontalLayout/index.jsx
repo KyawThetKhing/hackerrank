@@ -1,14 +1,17 @@
-import React from 'react'
-import { Outlet } from 'react-router';
-import Header from 'components/Header';
+import React, { useState } from "react";
+import { Outlet } from "react-router";
+import Header from "components/Header";
+import Menu from "components/Menu";
 
 const HorizontalLayout = () => {
-    return (
-        <div className="layoutWrapper">
-            <Header />
-            <Outlet />
-        </div>
-    )
-}
+  const [menuOpen, setMenuOpen] = useState(false);
+  return (
+    <div className="layoutWrapper">
+      <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <Outlet />
+    </div>
+  );
+};
 
-export default HorizontalLayout
+export default HorizontalLayout;

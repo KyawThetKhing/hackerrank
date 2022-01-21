@@ -1,0 +1,26 @@
+@import "assets/styles/core";
+
+.certifications {
+  padding: 0 7rem 0 7rem;
+
+  .certifications__certificationsSection {
+    .certifications__certificationTitle {
+      font-size: 22px;
+      font-weight: 400;
+      font-family: "Roboto-Bold";
+      margin: 20px 0;
+    }
+
+    .certifications__certificationCards {
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+
+      .certifications__certificationCard {
+        width: 30%;
+        margin: 30px 0px;
+        margin-right: 40px;
+      }
+    }
+  }
+}

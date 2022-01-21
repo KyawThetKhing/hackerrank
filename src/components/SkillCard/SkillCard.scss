@@ -1,0 +1,46 @@
+@import "assets/styles/core";
+
+.skillCard {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 30px;
+  min-height: 250px;
+  background: #fff;
+  justify-content: space-between;
+  align-items: flex-start;
+  cursor: pointer;
+  box-shadow: 8px 8px 5px 0px rgba(0, 0, 0, 0.32);
+  -webkit-box-shadow: 8px 8px 5px 0px rgba(0, 0, 0, 0.32);
+  -moz-box-shadow: 8px 8px 5px 0px rgba(0, 0, 0, 0.32);
+
+  .skillCard__type {
+    font-size: 16px;
+    color: $app-text-tertiary;
+  }
+
+  .skillCard__title {
+    font-size: 28px;
+    font-weight: 600;
+    font-family: "Roboto-Bold";
+  }
+
+  .skillCard__btn {
+    padding: 20px 40px;
+    border: none;
+    border: 1px solid $app-text-green;
+    color: $app-text-green;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Roboto-Bold";
+    transition: all 1s ease;
+
+    &:hover {
+      background-color: $app-text-white;
+    }
+  }
+}

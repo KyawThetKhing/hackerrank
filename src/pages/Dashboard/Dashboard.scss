@@ -1,0 +1,88 @@
+@import "assets/styles/core";
+
+.dashboard {
+  padding: 0 7rem 0 7rem;
+
+  .dashboard__certificationsSection {
+    .dashboard__certificationTitle {
+      font-size: 22px;
+      font-weight: 400;
+      font-family: "Roboto-Bold";
+      margin: 20px 0;
+    }
+
+    .dashboard__certificationCards {
+      display: flex;
+      justify-content: space-between;
+
+      .dashboard__certificationCard1 {
+        width: 30%;
+      }
+
+      .dashboard__certificationCard2 {
+        width: 30%;
+      }
+
+      .dashboard__veiwAllSkills {
+        width: 30%;
+        margin-left: 10px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        box-sizing: border-box;
+        padding: 10px 30px;
+        min-height: 183px;
+        background: $app-text-black;
+        color: $app-text-white;
+        justify-content: space-between;
+        align-items: flex-start;
+        box-shadow: 8px 8px 5px 0px rgba(0, 0, 0, 0.32);
+        -webkit-box-shadow: 8px 8px 5px 0px rgba(0, 0, 0, 0.32);
+        -moz-box-shadow: 8px 8px 5px 0px rgba(0, 0, 0, 0.32);
+
+        .dashboard__viewAllSkillsTitle {
+          font-size: 20px;
+          font-weight: 500;
+          font-family: "Roboto-Bold";
+        }
+
+        .dashboard__viewAllSkillsDescription {
+          font-size: 18px;
+          font-family: "Roboto";
+        }
+
+        .dashboard__viewAllSkillsBtn {
+          padding: 10px 20px;
+          font-family: "Roboto";
+          font-size: 18px;
+          color: $app-text-secondary;
+          border-radius: 5px;
+          background-color: #fff;
+        }
+      }
+    }
+  }
+
+  .dashboard__yourSkillsSection {
+    margin-top: 40px;
+
+    .dashboard__yourSkillsTitle {
+      font-size: 22px;
+      font-weight: 400;
+      font-family: "Roboto-Bold";
+      margin: 20px 0;
+    }
+
+    .dashboard__skillCards {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      .dashboard__yourSkillCard {
+        width: 47%;
+        margin: 20px 0;
+      }
+    }
+  }
+}
