@@ -1,0 +1,31 @@
+@import "assets/styles/core";
+
+.availableSkill {
+  width: 100%;
+  height: fit-content;
+  background-color: $app-bg-card;
+  box-shadow: 8px 8px 5px 0px rgba(0, 0, 0, 0.32);
+  -webkit-box-shadow: 8px 8px 5px 0px rgba(0, 0, 0, 0.32);
+  -moz-box-shadow: 8px 8px 5px 0px rgba(0, 0, 0, 0.32);
+
+  .availableSkill__row {
+    display: flex;
+
+    .availableSkill__data {
+      flex-basis: 33%;
+      font-size: 22px;
+      font-weight: 400;
+      font-family: "Roboto-Bold";
+      padding: 20px 20px;
+      color: $app-text-secondary;
+      border: 1px solid rgba(0, 0, 0, 0.05);
+      transition: all 1s ease;
+
+      &:hover {
+        box-shadow: 1px 8px 19px 0px rgba(0, 0, 0, 0.5);
+        -webkit-box-shadow: 1px 8px 19px 0px rgba(0, 0, 0, 0.5);
+        -moz-box-shadow: 1px 8px 19px 0px rgba(0, 0, 0, 0.5);
+      }
+    }
+  }
+}

@@ -119,3 +119,60 @@ export const skills = [
     total: 60
   }
 ];
+
+export const technologies = [
+  {
+    data1: "Algorithms",
+    data2: "Data Structures",
+    data3: "Mathematics"
+  },
+  {
+    data1: "C",
+    data2: "C++",
+    data3: "Java"
+  },
+  {
+    data1: "Python",
+    data2: "Ruby",
+    data3: "Linux Shell"
+  },
+  {
+    data1: "Functional Programming",
+    data2: "Artificial Intelligence",
+    data3: "SQL"
+  },
+  {
+    data1: "Databases",
+    data2: "Regex",
+    data3: ""
+  }
+];
+
+export const tutorials = [
+  {
+    category: "INTERVIEW PREPARATION",
+    title: "Interview Preparation Kit",
+    description:
+      "Curated challenges and tips based on learnings from 1000+ companies to help you prepare",
+    resumed: false
+  },
+  {
+    category: "30 DAYS OF CODE",
+    title: "Learn to code in 30 days",
+    description:
+      "Learn if-else statements, recursion, data structures, oops and more.",
+    resumed: true
+  },
+  {
+    category: "TUTORIAL",
+    title: "10 Days of Statistics",
+    description: "Learn Probability, distribution, regression and more!",
+    resumed: false
+  },
+  {
+    category: "TUTORIAL",
+    title: "10 Days of Javascript",
+    description: "Learn and improve your Javascript fundamentals",
+    resumed: false
+  }
+];

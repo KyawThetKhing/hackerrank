@@ -2,6 +2,7 @@
 
 .dashboard {
   padding: 0 7rem 0 7rem;
+  box-sizing: border-box;
 
   .dashboard__certificationsSection {
     .dashboard__certificationTitle {
@@ -83,6 +84,26 @@
         width: 47%;
         margin: 20px 0;
       }
+    }
+  }
+
+  .dashboard__availableSkillsSection {
+    margin-bottom: 50px;
+
+    .dashboard__availableSkillsTitle {
+      font-size: 22px;
+      font-weight: 400;
+      font-family: "Roboto-Bold";
+      margin: 20px 0;
+    }
+  }
+
+  .dashboard__tutorialsSec {
+    .dashboard__tutorialsSecTitle {
+      font-size: 22px;
+      font-weight: 400;
+      font-family: "Roboto-Bold";
+      margin: 20px 0;
     }
   }
 }

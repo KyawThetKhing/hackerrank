@@ -90,6 +90,7 @@
 
       .header__activeLink {
         position: relative;
+        overflow: hidden;
         color: $app-text-white;
 
         &::after {

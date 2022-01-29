@@ -2,11 +2,18 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 //local imports
-import { certifications, skills } from "utils/constants";
+import {
+  certifications,
+  skills,
+  technologies,
+  tutorials
+} from "utils/constants";
 import CertificationCard from "components/CertificationCard";
+import SkillCard from "components/SkillCard";
+import AvailableSkill from "components/AvailableSkill";
 
 import "./Dashboard.scss";
-import SkillCard from "components/SkillCard";
+import TutorialCard from "components/TutorialCard";
 
 const Dashboard = () => {
   return (
@@ -46,15 +53,25 @@ const Dashboard = () => {
       <div className="dashboard__yourSkillsSection">
         <div className="dashboard__yourSkillsTitle">Your Skills</div>
         <div className="dashboard__skillCards">
-          {skills.map(skill => (
-            <div className="dashboard__yourSkillCard">
+          {skills.map((skill, index) => (
+            <div key={index} className="dashboard__yourSkillCard">
               <SkillCard skill={skill} />
             </div>
           ))}
         </div>
       </div>
-      <div className="dashboard__availableSkillsSection"></div>
-      <div className="dashboard__tutorialsSeci"></div>
+      <div className="dashboard__availableSkillsSection">
+        <div className="dashboard__availableSkillsTitle">
+          Skills Available For Practice
+        </div>
+        <AvailableSkill technologies={technologies} />
+      </div>
+      <div className="dashboard__tutorialsSec">
+        <div className="dashboard__tutorialsSecTitle">Tutorials</div>
+        {tutorials.map(tutorial => (
+          <TutorialCard tutorial={tutorial} />
+        ))}
+      </div>
     </div>
   );
 };
