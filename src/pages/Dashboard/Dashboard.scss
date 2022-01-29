@@ -1,7 +1,7 @@
 @import "assets/styles/core";
 
 .dashboard {
-  padding: 0 7rem 0 7rem;
+  padding: 0 7rem 7rem 7rem;
   box-sizing: border-box;
 
   .dashboard__certificationsSection {
@@ -66,7 +66,7 @@
   }
 
   .dashboard__yourSkillsSection {
-    margin-top: 40px;
+    margin-top: 70px;
 
     .dashboard__yourSkillsTitle {
       font-size: 22px;
@@ -82,13 +82,16 @@
 
       .dashboard__yourSkillCard {
         width: 47%;
-        margin: 20px 0;
+
+        &:nth-child(3) {
+          margin-top: 50px;
+        }
       }
     }
   }
 
   .dashboard__availableSkillsSection {
-    margin-bottom: 50px;
+    margin-top: 70px;
 
     .dashboard__availableSkillsTitle {
       font-size: 22px;
@@ -99,11 +102,20 @@
   }
 
   .dashboard__tutorialsSec {
+    margin-top: 70px;
+
     .dashboard__tutorialsSecTitle {
       font-size: 22px;
       font-weight: 400;
       font-family: "Roboto-Bold";
       margin: 20px 0;
+    }
+
+    .dashboard__cards {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
     }
   }
 }

@@ -68,9 +68,10 @@ const Dashboard = () => {
       </div>
       <div className="dashboard__tutorialsSec">
         <div className="dashboard__tutorialsSecTitle">Tutorials</div>
-        {tutorials.map(tutorial => (
-          <TutorialCard tutorial={tutorial} />
-        ))}
+        <div className="dashboard__cards">
+          {tutorials.map(tutorial => (
+            <TutorialCard tutorial={tutorial} />
+          ))}</div>
       </div>
     </div>
   );
