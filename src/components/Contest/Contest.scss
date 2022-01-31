@@ -1,0 +1,75 @@
+@import "assets/styles/core.scss";
+
+.contest {
+  position: relative;
+  margin-top: 20px;
+  border: none;
+  box-shadow: 8px 8px 5px 0px rgba(0, 0, 0, 0.32);
+  -webkit-box-shadow: 8px 8px 5px 0px rgba(0, 0, 0, 0.32);
+  -moz-box-shadow: 8px 8px 5px 0px rgba(0, 0, 0, 0.32);
+
+  .accordionSummary {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    border-bottom: 1px solid lightgray;
+
+    &:hover .accordionLeft {
+      color: $app-text-green;
+    }
+
+    .accordionLeft {
+      flex-basis: 40%;
+      font-weight: 400;
+      font-family: "Roboto";
+      letter-spacing: 2px;
+      font-size: 18px;
+    }
+
+    .accordionRight {
+      flex-basis: 60%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      .accordionRight__text {
+        margin: 0px 10px;
+        font-size: 16px;
+        font-family: "Roboto";
+        color: $app-text-tertiary;
+      }
+
+      .accordionRight__text2 {
+        margin: 0px 10px;
+        font-size: 16px;
+        font-family: "Roboto";
+        color: rgba(68, 68, 214, 0.9);
+      }
+
+      .accordionRight__button {
+        padding: 10px 50px;
+        letter-spacing: 2px;
+        font-size: 16px;
+        background-color: $app-text-green;
+        color: $app-text-white;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .accordiaonDetals {
+    padding: 20px;
+
+    .accordionSubtitle {
+      font-size: 18px;
+      font-weight: 600;
+      font-family: "Roboto-Bold";
+    }
+
+    .accordionDesc {
+      font-size: 18px;
+      font-family: "Roboto";
+      margin-top: 20px;
+    }
+  }
+}

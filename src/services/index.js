@@ -11,21 +11,21 @@ api.defaults.headers.common["Content-Type"] = "application/json";
 
 export const defaultHeaders = {};
 
-const excludeRoutes = ["auth/login", "auth/register", "camp"];
+// const excludeRoutes = ["auth/login", "auth/register", "camp"];
 
-api.interceptors.request.use(request => {
-  console.log("request", request.url);
-  if (excludeRoutes.includes(request.url)) {
-    defaultHeaders.token = {};
-  } else {
-    const user = localStorage.getItem("currentUser");
-    const accessToken = JSON.parse(user).accessToken;
-    console.log("accessToken", accessToken);
-    request.headers.token = accessToken && `Bearer ${accessToken}`;
-    defaultHeaders.token = accessToken && `Bearer ${accessToken}`;
-  }
-  return request;
-});
+// api.interceptors.request.use(request => {
+//   console.log("request", request.url);
+//   if (excludeRoutes.includes(request.url)) {
+//     defaultHeaders.token = {};
+//   } else {
+//     const user = localStorage.getItem("currentUser");
+//     const accessToken = JSON.parse(user).accessToken;
+//     console.log("accessToken", accessToken);
+//     request.headers.token = accessToken && `Bearer ${accessToken}`;
+//     defaultHeaders.token = accessToken && `Bearer ${accessToken}`;
+//   }
+//   return request;
+// });
 
 api.interceptors.response.use(response => {
   console.log("Response", response);

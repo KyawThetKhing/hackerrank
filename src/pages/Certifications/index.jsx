@@ -14,7 +14,7 @@ const Certifications = () => {
         </div>
         <div className="certifications__certificationCards">
           {certifications.map(certification => (
-            <div className="certifications__certificationCard">
+            <div key={certification.title} className="certifications__certificationCard">
               <CertificationCard
                 title={certification.title}
                 description={certification.description}

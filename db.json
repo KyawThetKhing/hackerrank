@@ -1,0 +1,16 @@
+{
+    "activeContests": [
+        {
+            "title": "ProjectEuler+",
+            "subtitle": "Unrated Contest",
+            "imageUrl": "",
+            "desc": "HackerRank brings you the fun of solving Projecteuler challenges with hidden test cases and time limit."
+        },
+        {
+            "title": "ServiceNow Women Code to Win",
+            "subtitle": "Unrated Contest",
+            "imageUrl": "",
+            "desc": "ServiceNow's Early in Career team is organizing a series of professional development workshops followed by a nationwide contest for women students. Participate and bring out the best in you."
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+@import "assets/styles/core";
+
+.compete {
+  .compete__header {
+    padding: 0 7rem 0rem 7rem;
+    height: 100px;
+    background-color: $app-bg-card;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    .compete__headerTitle {
+      font-size: 16px;
+      color: $app-text-tertiary;
+    }
+
+    .compete__headerTitle2 {
+      font-size: 28px;
+      color: $app-text-primary;
+      font-weight: 600;
+      font-family: "Roboto-Bold";
+    }
+  }
+
+  .compete__content {
+    display: flex;
+    padding: 0 7rem 7rem 7rem;
+    box-sizing: border-box;
+
+    .compete__left {
+      flex-basis: 80%;
+
+      .compete__activeContest {
+        margin-top: 20px;
+
+        .compete__activeContestTitle {
+          font-size: 18px;
+          font-family: "Roboto";
+        }
+      }
+    }
+
+    .compete__right {
+      flex-basis: 20%;
+    }
+  }
+}
