@@ -12,5 +12,103 @@
             "imageUrl": "",
             "desc": "ServiceNow's Early in Career team is organizing a series of professional development workshops followed by a nationwide contest for women students. Participate and bring out the best in you."
         }
+    ],
+    "archivedContests": [
+        {
+            "id": 1,
+            "title": "DTCC Code-A-Thon+",
+            "subtitle": "Unrated Contest",
+            "imageUrl": "",
+            "date": "Aug 27th 2021, 10:30 pm +0630",
+            "desc": "Welcome to the DTCC Code-A-Thon. Compete against developers from around the world to solve a series of coding questions, win prizes, and be considered for a job at DTCC. With over 45 years of experience, DTCC is the premier post-trade market infrastructure for the global financial services industry. From 21 locations around the world, DTCC, through its subsidiaries, automates, centralizes and standardizes the processing of financial transactions, mitigating risk, increasing transparency and driving efficiency for thousands of broker/dealers, custodian banks and asset managers. Industry owned and governed, the firm simplifies the complexities of clearing, settlement, asset servicing, data management, data reporting and information services across asset classes, bringing increased security and soundness to financial markets.To learn more, please visit us at www.dtcc.com or connect with us on LinkedIn, Twitter, YouTube and Facebook. Join DTCC’s Talent Community today to stay in engaged with the latest updates. To learn about career opportunities at DTCC, please visit careers.dtcc.com."
+        },
+        {
+            "id": 2,
+            "title": "National Disability Independence Day 2021 Cod",
+            "subtitle": "Unrated Contest",
+            "imageUrl": "",
+            "date": "Aug 27th 2021, 10:30 pm +0630",
+            "desc": "Welcome to HackerRank's Celebrate National Disability Independence Day 2021 Coding Challenge, a coding contest where your winnings help support a cause in need. Compete against top coders from around the world to give $500 to a U.S. charity that increases opportunities for people with disabilities."
+        },
+        {
+            "id": 3,
+            "title": "Celebrate PRIDE 2021 Coding Contest",
+            "subtitle": "Unrated Contest",
+            "imageUrl": "",
+            "date": "Aug 27th 2021, 10:30 pm +0630",
+            "desc": "Welcome to HackerRank's Celebrate PRIDE 2021 Coding Challenge, a coding contest where your winnings help support a cause in need. Compete against top coders from around the world to give $500 to a U.S. charity that increases opportunities for members of the LGBTQIA+ individuals."
+        },
+        {
+            "id": 4,
+            "title": "COVID-19 Relief for India Coding Challenge",
+            "subtitle": "Unrated Contest",
+            "imageUrl": "",
+            "date": "Aug 27th 2021, 10:30 pm +0630",
+            "desc": "Welcome to HackerRank's COVID-19 Relief for India Coding Challenge, a coding contest in support of the ongoing fight against the coronavirus in India.New cases of COVID-19 in India continue to surpass 100,000 each day, with oxygen and hospital beds in short supply and millions in need of care. In this contest, you will compete against coders from around the world to donate to GiveIndia Foundation and support their effort to supply oxygen, care facilities, and financial support to victims of the virus.You will have 2 hours to solve a series of 4 coding questions. Good luck!"
+        },
+        {
+            "id": 5,
+            "title": "Asian Pacific American Heritage Month 2021 Co",
+            "subtitle": "Unrated Contest",
+            "imageUrl": "",
+            "date": "Aug 27th 2021, 10:30 pm +0630",
+            "desc": "Welcome to HackerRank's Celebrate Asian Pacific Heritage Month 2021 Coding Challenge, a coding contest where your winnings help support a cause in need. Compete against top coders from around the world to give $500 to a U.S. charity that increases opportunities for Asian and Pacific Islander American individuals."
+        },
+        {
+            "id": 6,
+            "title": "Celebrate Neurodiversity Coding Contest 2021",
+            "subtitle": "Unrated Contest",
+            "imageUrl": "",
+            "date": "Aug 27th 2021, 10:30 pm +0630",
+            "desc": "Welcome to HackerRank's Celebrate Neurodiversity Coding Challenge, a coding contest where your winnings help support a cause in need. Compete against top coders from around the world to give $500 to a U.S. charity that increases opportunities for neurodiverse individuals."
+        },
+        {
+            "id": 7,
+            "title": "International Women's Day Coding Contest 2021",
+            "subtitle": "Unrated Contest",
+            "imageUrl": "",
+            "date": "Aug 27th 2021, 10:30 pm +0630",
+            "desc": "Welcome to HackerRank's International Women's Day Coding Challenge, a coding contest where your winnings help support a cause in need. Compete against top coders from around the world to give $500 to a U.S. charity that increases opportunities for women in tech."
+        },
+        {
+            "id": 8,
+            "title": "Black History Month Coding Contest 2021",
+            "subtitle": "Unrated Contest",
+            "imageUrl": "",
+            "date": "Aug 27th 2021, 10:30 pm +0630",
+            "desc": "Welcome to HackerRank's Black History Month Coding Challenge, a coding contest where your winnings help support a cause in need. Compete against top coders from around the world to give $500 to a U.S. charity that increases educational opportunities for underrepresented and under-resourced groups."
+        },
+        {
+            "id": 9,
+            "title": "Hack For A Cause 2020",
+            "subtitle": "Unrated Contest",
+            "imageUrl": "",
+            "date": "Aug 27th 2021, 10:30 pm +0630",
+            "desc": "Welcome to HackerRank's Hack For A Cause, a coding contest where your winnings help support a cause in need. Compete against top coders from around the world to give $100 to a U.S. charity that increases educational opportunities for underrepresented and under-resourced groups."
+        },
+        {
+            "id": 10,
+            "title": "Hack the Interview VII (U.S.)",
+            "subtitle": "Unrated Contest",
+            "imageUrl": "",
+            "date": "Aug 27th 2021, 10:30 pm +0630",
+            "desc": "Welcome to Hack the Interview, a university coding contest where you can show off your skills and practice for interviews. The top scorers from the U.S. will have a chance to win Amazon gift cards worth up to $500 and have their results shared with sponsor companies.This contest begins Friday, August 28th at 12 p.m. EDT / 9 p.m. PDT. Once you begin, you will have 2 hours to complete a series four coding challenges."
+        },
+        {
+            "id": 11,
+            "title": "Hack the Interview VII (APAC)",
+            "subtitle": "Unrated Contest",
+            "imageUrl": "",
+            "date": "Aug 27th 2021, 10:30 pm +0630",
+            "desc": "Welcome to Hack the Interview, a university coding contest where you can show off your skills and practice for interviews. The top scorers from the U.S. will have a chance to win Amazon gift cards worth up to $500 and have their results shared with sponsor companies.This contest begins Friday, August 28th 9:30 p.m. IST. Once you begin, you will have 2 hours to complete a series four coding challenges."
+        },
+        {
+            "id": 12,
+            "title": "Justice League 1639642697",
+            "subtitle": "Unrated Contest",
+            "imageUrl": "",
+            "date": "Aug 27th 2021, 10:30 pm +0630",
+            "desc": "Please provide a short description of your contest here! This will also be used as metadata."
+        }
     ]
 }

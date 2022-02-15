@@ -7,13 +7,15 @@ import "./Contest.scss";
 const Contest = ({ expanded, contest, index, handleChange, activeContest }) => {
   return (
     <Accordion
-      sx={{ border: 0 }}
       className="contest"
       expanded={expanded === index}
       onChange={handleChange(index)}
     >
       <AccordionSummary
         className="accordionSummary"
+        sx={{
+          borderBottom: "1px solid lightgray"
+        }}
         aria-controls="panel1bh-content"
         id="panel1bh-header"
       >
@@ -23,7 +25,7 @@ const Contest = ({ expanded, contest, index, handleChange, activeContest }) => {
           <p className="accordionRight__text2">
             {activeContest ? "View Details" : "Ended"}
           </p>
-          <button className="accordionRight__button">
+          <button className={activeContest ? "accordionRight__button" : "accordionRight__btnOutline"}>
             {activeContest ? "Sign Up" : "View Challenges"}
           </button>
         </div>
@@ -33,7 +35,7 @@ const Contest = ({ expanded, contest, index, handleChange, activeContest }) => {
         {contest.imageUrl && <img src={contest.imageUrl} alt="" />}
         <div className="accordionDesc">{contest.desc}</div>
       </AccordionDetails>
-    </Accordion>
+    </Accordion >
   );
 };
 

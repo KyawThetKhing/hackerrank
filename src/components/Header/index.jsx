@@ -25,10 +25,10 @@ const Header = ({ setMenuOpen, menuOpen }) => {
             </div>
           </div>
           <div className="header__logo">
-            <Link to="/dashboard">HackerRank</Link>
+            <Link to="/">HackerRank</Link>
           </div>
           <NavLink
-            to="/dashboard"
+            to="/"
             className={({ isActive }) => (isActive ? "header__activeLink" : "")}
           >
             <div className="header__list">PRACTICE</div>

@@ -17,7 +17,7 @@ const App = () => {
   return (
     <Routes>
       <Route path="/" element={<HorizontalLayout />}>
-        <Route path="dashboard" index element={
+        <Route index element={
           <PrivateRoute>
             <Dashboard />
           </PrivateRoute>} />

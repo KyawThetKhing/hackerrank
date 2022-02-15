@@ -23,9 +23,12 @@ import {
 import {
   getActiveContestsSuccess,
   getActiveContestsStart,
-  getActiveContestsFailure
+  getActiveContestsFailure,
+  getArchivedContestsSuccess,
+  getArchivedContestsStart,
+  getArchivedContestsFailure
 } from "./contestSlice";
-import { fetchActiveContests } from "services/contestService";
+import { fetchActiveContests, fetchArchivedContests } from "services/contestService";
 
 //login user
 export const login = async (dispatch, user) => {
@@ -114,5 +117,17 @@ export const getActiveContests = async dispatch => {
   } catch (error) {
     console.log("Error", error);
     dispatch(getActiveContestsFailure());
+  }
+};
+//get archived contests
+export const getArchivedContests = async (dispatch, page = 1, limit = 5) => {
+  dispatch(getArchivedContestsStart());
+  try {
+    const res = await fetchArchivedContests(page, limit);
+    console.log("Response Headers", res.headers);
+    dispatch(getArchivedContestsSuccess(res.data));
+  } catch (error) {
+    console.log("Error", error);
+    dispatch(getArchivedContestsFailure());
   }
 };

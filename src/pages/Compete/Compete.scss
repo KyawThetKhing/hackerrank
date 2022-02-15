@@ -1,6 +1,7 @@
 @import "assets/styles/core";
 
 .compete {
+
   .compete__header {
     padding: 0 7rem 0rem 7rem;
     height: 100px;
@@ -37,6 +38,17 @@
         .compete__activeContestTitle {
           font-size: 18px;
           font-family: "Roboto";
+          letter-spacing: 2px;
+        }
+      }
+
+      .compete__archivedContests {
+        margin-top: 20px;
+
+        .compete__archivedContestTitle {
+          font-size: 18px;
+          font-family: "Roboto";
+          letter-spacing: 2px;
         }
       }
     }
